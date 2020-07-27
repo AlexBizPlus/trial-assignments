@@ -1,0 +1,28 @@
+.breadcrumbs {
+  .list-reset();
+  .flex-row(flex-end, center);
+  width: @mobile-wrapper;
+
+  margin-bottom: 13px;
+
+  & li:not(:last-child) {
+    margin-right: 10px;
+    padding-right: 19px;
+
+    background-image: url("../img/icon_arrow.svg");
+    background-repeat: no-repeat;
+    background-position: top 50% right 0;
+    background-size: 10px 11px;
+  }
+
+  & li:last-child {
+    margin-right: 5px;
+  }
+}
+
+.breadcrumbs__link {
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: @breadcrumbs-color;
+}

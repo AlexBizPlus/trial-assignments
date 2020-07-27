@@ -1,0 +1,30 @@
+.availability {
+  .list-reset();
+  .flex-column(flex-start, center);
+  width: 100%;
+  margin-bottom: 12px;
+  padding-top: 6px;
+  padding-bottom: 15px;
+  background-color: @background-color;
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 0.01em;
+  color: @promo-price-color;
+
+  li {
+    .flex-row(flex-start, center);
+    min-width: @mobile-wrapper;
+  }
+}
+
+.availability__link {
+  color: @keywords-color;
+}
+
+.availability__svg {
+  margin-right: 15px;
+
+  &--space {
+    margin-right: 12px;
+  }
+}
