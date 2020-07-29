@@ -1,3 +1,35 @@
 .title {
-  .visually-hidden-mixin();
+  display: none;
+}
+
+//------------------------------------------- TABLET-1 -------------------------
+
+@media (min-width: @tablet-width) {
+  .title {
+    display: block;
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: @promo-price-color;
+    order: 2;
+  }
+}
+
+//------------------------------------------- TABLET-2 -------------------------
+
+@media (min-width: @tablet-large-width) {
+  .title {
+    margin-top: 55px;
+    margin-bottom: 8px;
+  }
+}
+
+//------------------------------------------- DESKTOP -------------------------
+
+@media (min-width: @desktop-width) {
+  .title {
+    margin-bottom: 5px;
+  }
 }

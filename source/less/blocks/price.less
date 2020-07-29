@@ -6,7 +6,7 @@
 }
 
 .price__wrapper {
-  min-width: @mobile-wrapper;
+  width: @mobile-wrapper;
   margin: 0 auto;
 }
 
@@ -29,4 +29,41 @@
 .price__promo-comment {
   font-size: 15px;
   letter-spacing: 0.01em;
+}
+
+//------------------------------------------- TABLET-1 -------------------------
+
+@media (min-width: @tablet-width) {
+  .price {
+    order: 4;
+  }
+
+  .price__wrapper {
+    margin-bottom: 4px;
+  }
+
+  .price__old {
+    margin-right: 5px;
+    word-spacing: 3px;
+  }
+
+  .price__promo-comment {
+    margin-left: 2px;
+  }
+}
+
+//------------------------------------------- TABLET-2 -------------------------
+
+@media (min-width: @tablet-large-width) {
+  .price {
+    .flex-row(space-between, flex-start);
+    width: @tablet-container;
+    margin-bottom: 15px;
+  }
+
+  //
+  .price__wrapper {
+    width: auto;
+    margin: 0;
+  }
 }

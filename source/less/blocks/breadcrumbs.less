@@ -1,14 +1,13 @@
 .breadcrumbs {
   .list-reset();
   .flex-row(flex-end, center);
-  width: @mobile-wrapper;
-
+  min-width: @mobile-wrapper;
+  padding-right: 15px;
   margin-bottom: 13px;
 
   & li:not(:last-child) {
     margin-right: 10px;
     padding-right: 19px;
-
     background-image: url("../img/icon_arrow.svg");
     background-repeat: no-repeat;
     background-position: top 50% right 0;
@@ -25,4 +24,34 @@
   line-height: 20px;
   letter-spacing: 0.01em;
   color: @breadcrumbs-color;
+}
+
+//------------------------------------------- TABLET-1 -------------------------
+
+@media (min-width: @tablet-width) {
+  .breadcrumbs {
+    .flex-row(flex-start, center);
+    flex-wrap: wrap;
+    order: 1;
+    margin-bottom: 2px;
+
+    & li:not(:last-child) {
+      margin-right: 10px;
+      padding-right: 22px;
+    }
+  }
+
+  .breadcrumbs__link {
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0;
+  }
+}
+
+//------------------------------------------- TABLET-2 -------------------------
+
+@media (min-width: @tablet-large-width) {
+  .breadcrumbs {
+    .visually-hidden-mixin();
+  }
 }

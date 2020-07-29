@@ -2,13 +2,14 @@
   .flex-row(space-between, center);
   width: @mobile-wrapper;
   margin-bottom: 36px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .favorites__link {
   .flex-row(center, center);
   width: @mobile-small-wrapper;
-  min-height: 40px;
-  // border: 2px solid @border-color;
+  height: 40px;
   box-shadow: inset 0 0 0 2px @border-color;
   font-size: 13px;
   line-height: 24px;
@@ -20,5 +21,39 @@
 
 .favorites__button {
   border: none;
+  padding: 0;
+  margin-right: 4px;
   background-color: transparent;
+}
+
+//------------------------------------------- TABLET-1 -------------------------
+
+@media (min-width: @tablet-width) {
+  .favorites {
+    width: @tablet-link-wrapper;
+    margin-bottom: 25px;
+    margin-left: 0;
+    margin-right: 0;
+    order: 8;
+  }
+
+  .favorites__button {
+    .visually-hidden-mixin();
+  }
+}
+
+//------------------------------------------- TABLET-2 -------------------------
+
+@media (min-width: @tablet-large-width) {
+  .favorites {
+    width: @tablet-button-wrapper;
+  }
+}
+
+//------------------------------------------- DESKTOP -------------------------
+
+@media (min-width: @desktop-width) {
+  .favorites {
+    width: @desktop-button-wrapper;
+  }
 }

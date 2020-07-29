@@ -1,12 +1,42 @@
 .description {
   .flex-column(flex-start, flex-start);
-  min-width: @mobile-wrapper;
+  width: @mobile-wrapper;
   min-height: 84px;
   margin-top: 0;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
   margin-left: 15px;
   margin-right: 15px;
   font-size: 12px;
   line-height: 18px;
   color: @promo-price-color;
+
+  span {
+    width: @mobile-wrapper;
+  }
+}
+
+//------------------------------------------- TABLET-1 -------------------------
+
+@media (min-width: @tablet-width) {
+  .description {
+    margin-bottom: 4px;
+    margin-left: 0;
+    padding-right: 30px;
+    order: 7;
+    word-spacing: 2px;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+//------------------------------------------- TABLET-2 -------------------------
+
+@media (min-width: @tablet-large-width) {
+  .description {
+    max-width: @desktop-text-container;
+    padding-right: 0;
+    margin-right: 40px;
+  }
 }

@@ -13,7 +13,7 @@
 
   li {
     .flex-row(flex-start, center);
-    min-width: @mobile-wrapper;
+    width: @mobile-wrapper;
   }
 }
 
@@ -26,5 +26,41 @@
 
   &--space {
     margin-right: 12px;
+  }
+}
+
+//------------------------------------------- TABLET-1 -------------------------
+
+@media (min-width: @tablet-width) {
+  .availability {
+    width: @mobile-wrapper;
+    padding-left: 22px;
+    order: 5;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    margin-bottom: 28px;
+    box-sizing: border-box;
+
+    li {
+      width: 100%;
+    }
+  }
+}
+
+//------------------------------------------- TABLET-2 -------------------------
+
+@media (min-width: @tablet-large-width) {
+  .availability {
+    width: @tablet-container;
+    margin-bottom: 45px;
+  }
+}
+
+
+//------------------------------------------- DESKTOP -------------------------
+
+@media (min-width: @desktop-width) {
+  .availability {
+    margin-bottom: 47px;
   }
 }
