@@ -1,0 +1,41 @@
+@import (inline) "../css/normalize.css";
+
+@import "blocks/fonts.less";
+@import "blocks/mixins.less";
+@import "blocks/variables.less";
+
+body {
+  .base-font();
+  width: 100%;
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@import "blocks/main.less";
+@import "blocks/images.less";
+@import "blocks/title.less";
+@import "blocks/breadcrumbs.less";
+@import "blocks/item.less";
+@import "blocks/keywords.less";
+@import "blocks/price.less";
+@import "blocks/availability.less";
+@import "blocks/description.less";
+@import "blocks/details.less";
+@import "blocks/shop-link.less";
+@import "blocks/favorites.less";
+@import "blocks/social.less";
+@import "blocks/button-wrapper.less";

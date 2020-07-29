@@ -1,0 +1,35 @@
+.item {
+  .flex-column(flex-start, center);
+}
+
+//------------------------------------------- TABLET-1 -------------------------
+
+@media (min-width: @tablet-width) {
+  .item {
+    .flex-column(flex-start, flex-start);
+    min-width: @tablet-item-wrapper;
+    margin-top: 20px;
+    margin-left: @tablet-item-margin;
+    margin-right: auto;
+  }
+}
+
+//------------------------------------------- TABLET-2 -------------------------
+
+@media (min-width: @tablet-large-width) {
+  .item {
+    min-width: @tablet-large-wrapper;
+    margin-left: @tablet-large-margin;
+  }
+}
+
+//------------------------------------------- DESKTOP -------------------------
+
+@media (min-width: @desktop-width) {
+  .item {
+    width: @desktop-image-wrapper;
+    max-width: @desktop-image-wrapper;
+    margin-left: @desktop-item-margin;
+  }
+
+}

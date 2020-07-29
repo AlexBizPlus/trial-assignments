@@ -1,0 +1,49 @@
+.keywords {
+  .list-reset();
+  .flex-row(flex-start, flex-start);
+  flex-wrap: wrap;
+  width: @mobile-wrapper;
+  min-height: 37px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+
+  & li {
+    margin-right: 24px;
+  }
+}
+
+.keywords__link {
+  font-size: 13px;
+  line-height: 24px;
+  color: @keywords-color;
+}
+
+//------------------------------------------- TABLET-1 -------------------------
+
+@media (min-width: @tablet-width) {
+  .keywords {
+    .flex-row(flex-start, center);
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+    margin-left: 0;
+    order: 3;
+
+    & li {
+      margin-right: 27px;
+    }
+  }
+}
+
+//------------------------------------------- TABLET-2 -------------------------
+
+@media (min-width: @tablet-large-width) {
+  .keywords {
+    margin-bottom: 37px;
+
+    li {
+      margin-right: 27px;
+    }
+  }
+}

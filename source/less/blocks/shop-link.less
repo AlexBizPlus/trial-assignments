@@ -1,0 +1,43 @@
+.shop-link {
+  .flex-row(center, center);
+  width: @mobile-wrapper;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 17px;
+  background-color: @keywords-color;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: @light-color;
+}
+
+//------------------------------------------- TABLET-1 -------------------------
+
+@media (min-width: @tablet-width) {
+  .shop-link {
+    width: @tablet-link-wrapper;
+    margin-left: 0;
+    margin-right: 10px;
+  }
+}
+
+//------------------------------------------- TABLET-2 -------------------------
+
+@media (min-width: @tablet-large-width) {
+  .shop-link {
+    width: @tablet-button-wrapper;
+    margin-right: 22px;
+  }
+}
+
+//------------------------------------------- DESKTOP -------------------------
+
+@media (min-width: @desktop-width) {
+  .shop-link {
+    width: @desktop-button-wrapper;
+    margin-right: 20px;
+  }
+}

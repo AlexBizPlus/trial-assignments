@@ -1,0 +1,98 @@
+.images {
+  .flex-row(center, flex-start);
+  width: @mobile-wrapper;
+  margin: 0 auto;
+}
+
+.images__wrapper {
+  display: none;
+}
+
+.images__list {
+  .list-reset();
+  display: none;
+}
+
+.images__picture {
+  width: 242px;
+  height: 351px;
+}
+
+//------------------------------------------- TABLET-1 -------------------------
+
+@media (min-width: @tablet-width) {
+  .images {
+    .flex-row(flex-end, flex-start);
+    min-width: @tablet-image-wrapper;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .images__wrapper {
+    .flex-column(flex-start, center);
+    margin-right: 9px;
+  }
+
+  .images__list {
+    .flex-column(flex-start, flex-start);
+
+    & li {
+      margin-bottom: 15px;
+    }
+  }
+
+  .images__button {
+    width: 42px;
+    height: 31px;
+    padding: 0;
+    box-shadow: inset 0 0 0 1px @outline-color;
+    border: none;
+    background-color: transparent;
+  }
+
+  .images__picture {
+    width: 290px;
+    height: 420px;
+  }
+}
+
+//------------------------------------------- TABLET-2 -------------------------
+
+@media (min-width: @tablet-large-width) {
+  .images {
+    min-width: @tablet-large-images;
+    margin-top: 22px;
+  }
+
+  .images__wrapper {
+    margin-right: 30px;
+  }
+
+  .images__list li {
+    margin-bottom: 25px;
+  }
+
+  .images__preview {
+    width: 90px;
+    height: 130px;
+  }
+
+  .images__picture {
+    width: 340px;
+    height: 492px;
+  }
+}
+
+//------------------------------------------- DESKTOP -------------------------
+
+@media (min-width: @desktop-width) {
+  .images {
+    width: @desktop-image-wrapper;
+    max-width: @desktop-image-wrapper;
+  }
+
+  .images__wrapper {
+    margin-right: 110px;
+  }
+}

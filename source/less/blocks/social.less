@@ -1,0 +1,93 @@
+.social {
+  display: none;
+}
+
+.social__list {
+  .list-reset();
+}
+
+//------------------------------------------- TABLET-1 -------------------------
+
+@media (min-width: @tablet-width) {
+  .social {
+    .flex-row(flex-start, flex-start);
+    order: 9;
+  }
+
+  .social__text {
+    display: none;
+  }
+
+  .social__list {
+    .flex-row(flex-start, flex-start);
+  }
+
+  .social__item {
+    font-size: 0;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  .social__link {
+    .flex-row(center, center);
+    width: 30px;
+    height: 30px;
+    // border: 1px solid #000;
+
+    border-radius: 50%;
+
+    &--vk {
+      background-color: @social-vk-color;
+    }
+
+    &--g {
+      background-color: @social-g-color;
+    }
+
+    &--fb {
+      background-color: @social-fb-color;
+    }
+
+    &--tw {
+      background-color: @social-tw-color;
+    }
+
+    &--no-color {
+      position: relative;
+      background-color: transparent;
+    }
+  }
+
+  .social__comments-count {
+    position: absolute;
+    bottom: 3px;
+    right: 8px;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: @promo-price-color;
+  }
+}
+
+//------------------------------------------- TABLET-2 -------------------------
+
+@media (min-width: @tablet-large-width) {
+  .social {
+    .flex-row(flex-start, center);
+  }
+
+  .social__text {
+    display: inline;
+    margin-right: 20px;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: @promo-price-color;
+  }
+}
